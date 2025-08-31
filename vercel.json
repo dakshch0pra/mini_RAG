@@ -3,10 +3,14 @@
   "builds": [
     {
       "src": "mini_rag.py",
-      "use": "@vercel/python",
-      "config": { "runtime": "python3.11" }
+      "use": "@vercel/python"
     }
   ],
+  "build": {
+    "env": {
+      "PYTHON_VERSION": "3.11"
+    }
+  },
   "routes": [
     {
       "src": "/(.*)",
