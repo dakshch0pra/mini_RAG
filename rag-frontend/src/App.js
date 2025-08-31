@@ -221,7 +221,7 @@ function App() {
   const [uploadedTexts, setUploadedTexts] = useState([]); // NEW: Store uploaded texts
 
   // Your FastAPI backend URL (change this to match your deployment)
-  const API_URL = 'http://localhost:8000';
+  const API_URL = '/.netlify/functions/api';
 
   // ADD THIS SNIPPET HERE:
   // Auto-scroll to bottom when answer is generated
